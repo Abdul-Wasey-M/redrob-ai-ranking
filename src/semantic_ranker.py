@@ -5,6 +5,9 @@ import json
 
 from build_candidate_text import build_candidate_text
 
+# LOAD MODEL ONLY ONCE
+model = SentenceTransformer("all-MiniLM-L6-v2")
+
 
 def read_job_description(docx_path):
 
@@ -27,8 +30,6 @@ def get_first_candidate(candidate_file):
 
 
 def calculate_similarity(job_text, candidate_text):
-
-    model = SentenceTransformer("all-MiniLM-L6-v2")
 
     embeddings = model.encode(
         [job_text, candidate_text],
