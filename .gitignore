@@ -1,4 +1,4 @@
 data/candidates.jsonl
-*.pyc
 __pycache__/
 *.pyc
+outputs/
