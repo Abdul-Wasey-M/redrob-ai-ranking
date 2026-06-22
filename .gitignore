@@ -1,4 +1,5 @@
 data/candidates.jsonl
 __pycache__/
 *.pyc
-outputs/
+outputs/top1000_candidates.csv
+outputs/top100_candidates.csv
