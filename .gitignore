@@ -1,5 +1,10 @@
+# Large dataset
 data/candidates.jsonl
+
+# Python cache
 __pycache__/
 *.pyc
+
+# Intermediate output
 outputs/top1000_candidates.csv
 outputs/top100_candidates.csv
